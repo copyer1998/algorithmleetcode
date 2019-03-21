@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.bootcss.com/docsify/4.9.1/themes/vue.css" title="vue">
+  <link rel="stylesheet" href="https://cdn.bootcss.com/docsify/4.9.1/themes/dark.css" title="dark" disabled="">
+  <link rel="stylesheet" href="https://cdn.bootcss.com/docsify/4.9.1/themes/buble.css" title="buble" disabled="">
+  <link rel="stylesheet" href="https://cdn.bootcss.com/docsify/4.9.1/themes/pure.css" title="pure" disabled="">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css"
+    title="docsify-themeable" disabled="disabled">
+
+</head>
+
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+
+      basePath: '/',
+      logo: '/_media/icon.svg',
+      loadSidebar: true,
+      loadSidebar: './SUMMARY.md',
+
+      subMaxLevel: 2,
+      copyCode: {
+        buttonText: '复制',
+        errorText: 'Error',
+        successText: '已复制'
+      },
+      name: 'docsify',
+      repo: '',
+      pagination: {
+        previousText: '上一章节',
+        nextText: '下一章节',
+      },
+      search: 'auto', // 默认值
+
+      search: [
+        '/', // => /README.md
+        '/guide', // => /guide.md
+        '/get-started', // => /get-started.md
+        '/docs', // => /zh-cn/README.md
+      ],
+
+      // 完整配置参数
+      search: {
+        noData: {
+          '/de-de/': 'Keine Ergebnisse!',
+          '/': '没有结果!'
+        },
+        paths: 'auto',
+        placeholder: {
+          '/de-de/': 'Suche',
+          '/': '搜索'
+        }
+      },
+      executeScript: true
+    }
+  </script>
+  <script src="https://cdn.bootcss.com/docsify/4.9.1/docsify.min.js"></script>
+  <!-- <script src="//unpkg.com/docsify-copy-code@2"></script> -->
+  <script src="https://unpkg.com/docsify-copy-code"></script>
+  <script src="https://cdn.bootcss.com/docsify/4.9.1/plugins/emoji.js"></script>
+  <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  <script src="//cdn.bootcss.com/docsify/4.9.1/plugins/search.js"></script>
+
+  <!-- <script src="https://cdn.bootcss.com/prism/9000.0.1/components/prism-core.min.js"></script> -->
+  <script src="https://cdn.bootcss.com/prism/9000.0.1/components/prism-c.min.js"></script>
+  <script src="https://cdn.bootcss.com/prism/9000.0.1/components/prism-bash.min.js"></script>
+  <script src="https://cdn.bootcss.com/prism/9000.0.1/components/prism-javascript.min.js"></script>
+  <script src="https://cdn.bootcss.com/prism/9000.0.1/components/prism-java.min.js"></script>
+  <script src="https://cdn.bootcss.com/prism/9000.0.1/components/prism-python.min.js"></script>
+
+</body>
+
+</html>
