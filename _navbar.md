@@ -1,3 +1,7 @@
 - 基础
-  * [快速开始](/quickstart.md)
+  * [主页](/README.md)
+
+- 配置
+  * [配置项](/configuration.md)
+  * [主题](/themes.md)
 
